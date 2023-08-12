@@ -18,15 +18,15 @@ async function checkWeather(city) {
     wind_speed.innerHTML= `${weather_data.wind.speed}km/H`
     switch(weather_data.weather[0].main){
         case 'Clouds' :
-            weather_img.src = "/assets/cloud.png"
+            weather_img.src = "./assets/cloud.png"
         case 'Clear' :
-            weather_img.src = "/assets/clear.png"
+            weather_img.src = "./assets/clear.png"
         case 'Rain' :
-            weather_img.src = "/assets/Rain.png"
+            weather_img.src = "./assets/Rain.png"
         case 'Mist' :
-            weather_img.src = "/assets/mist.png"
+            weather_img.src = "./assets/mist.png"
         case 'Snow' :
-            weather_img.src = "/assets/snow.png"
+            weather_img.src = "./assets/snow.png"
     }
 }  
 
