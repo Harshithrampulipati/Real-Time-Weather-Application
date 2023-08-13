@@ -4,51 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather With JavaScript</title>
+    <title>Weather App With JavaScript</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-     <h1>Done by Harshith</h1>
-     <div class="container">
-       <div class="header">
-
-             <div class="search">
-                <input type="text" placeholder="Enter location"
-                class="input-box">
-
+    <div class="container">
+        <div class="header">
+            <div class="search-box">
+                <input type="text" placeholder="Enter your location" class="input-box">
                 <button class="fa-solid fa-magnifying-glass" id="searchBtn"></button>
-             </div>
-     </div>
-     </div>
-     <div class="location-not-found">
-        <h1>sorry,location not found</h1>
-        <img src="./assets/404.png" alt="404 error">
-     </div>
-      <div class="weather-body">
-        <img src="./assets/cloud.png" alt="weather image" class="weather-img">
-        <div class="weather-box">
-            <p class="temperature">0<sup>°C</sup></p>
-            <p class="description">Light Rain</p>
-        </div>
-        <div class="weather-details">
-            <div class="humidity">
-                <i class="fa-solid fa-droplet"></i>
-                <div class="text">
-                    <span id="humidity">0%</span>
-                    <p>Humidity</p>
-                </div>
-            </div>
-            <div class="wind">
-                <i class="fa-solid fa-wind"></i>
-                <div class="text">
-                    <span id="wind-speed">0km</span>
-                    <p>Wind Speed</p>
-                </div>
             </div>
         </div>
-      </div>
-     </div>
-     <script src="script.js"></script>
-     <script src="https://kit.fontawesome.com/adbacbd852.js" crossorigin="anonymous"></script>
+
+        <div class="location-not-found" id="locationNotFound">
+            <h1>Sorry, Location not found!!!</h1>
+            <div class="image-container">
+                <img src="/assets/404.png" alt="404 Error" class="error-image">
+            </div>
+        </div>
+
+        <div class="weather-body" id="weatherBody">
+            <img src="/assets/cloud.png" alt="Weather Image" class="weather-img">
+            <div class="weather-box">
+                <p class="temperature">0 <sup>°C</sup></p>
+                <p class="description">light rain</p>
+            </div>
+            <div class="weather-details">
+                <div class="humidity">
+                    <i class="fa-sharp fa-solid fa-droplet"></i>
+                    <div class="text">
+                        <span id="humidity">0%</span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="text">
+                        <span id="wind-speed">0Km/H</span>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="credit-line">Done By Harshith</p>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/adbacbd852.js" crossorigin="anonymous"></script>
 </body>
 </html>
+
